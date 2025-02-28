@@ -21,22 +21,22 @@ public class TestBai3 {
         chromeDriver = new ChromeDriver();
     }
 
-    @Test
-    public void dangky() {
-        chromeDriver.get("https://vitimex.com.vn/dang-ky.html");
-        WebElement hoten = chromeDriver.findElement(By.xpath("//input[@id='name']"));
-        hoten.sendKeys("minhvu");
-        WebElement sdt = chromeDriver.findElement(By.xpath("//input[@id='phone']"));
-        sdt.sendKeys("0987023237");
-        WebElement email = chromeDriver.findElement(By.xpath("//input[@id='email']"));
-        email.sendKeys("vu2691744@gmail.com");
-        WebElement mk = chromeDriver.findElement(By.xpath("//input[@id='pass-regis']"));
-        mk.sendKeys("vu269");
-        WebElement xnmk = chromeDriver.findElement(By.xpath("//input[@id='pass-confirm']"));
-        xnmk.sendKeys("vu269");
-        WebElement btn = chromeDriver.findElement(By.xpath("//a[@id='register-btn']"));
-        btn.click();
-    }
+//    @Test
+//    public void dangky() {
+//        chromeDriver.get("https://vitimex.com.vn/dang-ky.html");
+//        WebElement hoten = chromeDriver.findElement(By.xpath("//input[@id='name']"));
+//        hoten.sendKeys("minhvu");
+//        WebElement sdt = chromeDriver.findElement(By.xpath("//input[@id='phone']"));
+//        sdt.sendKeys("0987023237");
+//        WebElement email = chromeDriver.findElement(By.xpath("//input[@id='email']"));
+//        email.sendKeys("vu2691744@gmail.com");
+//        WebElement mk = chromeDriver.findElement(By.xpath("//input[@id='pass-regis']"));
+//        mk.sendKeys("vu269");
+//        WebElement xnmk = chromeDriver.findElement(By.xpath("//input[@id='pass-confirm']"));
+//        xnmk.sendKeys("vu269");
+//        WebElement btn = chromeDriver.findElement(By.xpath("//a[@id='register-btn']"));
+//        btn.click();
+//    }
     @Test
     public void dangNhap() {
         chromeDriver.get("https://vitimex.com.vn/");
